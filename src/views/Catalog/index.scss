@@ -1,0 +1,75 @@
+@import '../../assets/scss/all';
+
+.catalog {
+    margin: 0 0 0 $sidebarWidth;
+    padding: $headerHeight 0 20px 0;
+    transition: margin-left .2s ease-in-out;
+    background: #f9f9fc;
+
+    &.sidebarCollapsed {
+        margin-left: 0;
+    }
+
+    @media (max-width: 767px)
+    {
+        margin-left: 0;
+    }
+
+    .ais-SearchBox {
+        padding: 20px 10px 0 10px;
+
+        input {
+            border-color: #e9e9ec;
+            border-radius: 20px;
+            outline: 0;
+        }
+    }
+
+    .ais-Stats {
+        margin-right: 10px;
+        text-align: right;
+        font-size: 10px;
+
+        span {
+            font-size: 10px;
+        }
+    }
+
+    .resultContainer {
+        padding: 10px;
+
+        .row > div {
+            padding: 5px;
+            border-radius: 10px;
+
+            .hit {
+                height: 200px;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+                position: relative;
+                border-radius: 10px;
+                overflow: hidden;
+                cursor: pointer;
+
+                > div {
+                    width: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    padding: 5px;
+                    box-sizing: border-box;
+                    background: rgba(#666666, 0.5);
+                    color: $colorText;
+                    font-size: 14px;
+
+                    .ais-Highlight {
+                        .ais-Highlight-highlighted {
+                            background-color: transparent;
+                            color: #28b0a2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

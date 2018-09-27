@@ -1,0 +1,32 @@
+@import '../../assets/scss/all';
+
+.sidebar {
+    .sidebarContent {
+        .ToggleRefinementTrigger {
+            line-height: 14px;
+            padding: 5px;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+            border-radius: 20px;
+            border: 2px solid $colorMain;
+            color: $colorMain;
+            cursor: pointer;
+
+            &.active {
+                background: $colorMain;
+                color: $colorText;
+            }
+
+            &.disabled {
+                border-color: #999999;
+                color: #999999;
+                cursor: default;
+            }
+        }
+
+        .ais-ToggleRefinement {
+            display: none;
+        }
+    }
+}

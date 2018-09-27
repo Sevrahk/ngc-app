@@ -1,0 +1,48 @@
+@import '../../assets/scss/all';
+
+.homeContainer {
+    width: 100%;
+    height: 100%;
+    padding-top: 70px;
+    background: linear-gradient(135deg,#8f75da 0,#727cf5 60%);
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    .title {
+        width: 100%;
+        font-weight: normal;
+        position: absolute;
+        top: 10px;
+        left: 0;
+
+        h1, h2 {
+            font-size: 2em;
+            font-weight: normal;
+        }
+        h2 {
+            font-size: 1.3em;
+        }
+    }
+
+    a {
+        width: 100%;
+        height: 100px;
+        margin-bottom: 25px;
+        padding: 0 30px;
+        background: #ffffff;
+        border-radius: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+
+        svg {
+            margin-left: 10px;
+        }
+    }
+}

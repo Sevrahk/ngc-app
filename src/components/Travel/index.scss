@@ -1,0 +1,35 @@
+@import '../../assets/scss/all';
+
+.travel {
+    border-top: 1px solid #999999;
+    padding-top: 20px;
+
+    > div {
+        padding: 2px 0;
+        display: flex;
+        justify-content: space-between;
+
+        &:first-child {
+            padding-top: 0;
+        }
+
+        &:last-child {
+            padding-bottom: 0;
+        }
+
+        div {
+            width: 30px;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        span {
+            height: 2px;
+            margin: 10px 20px;
+            background: $colorMain;
+            flex-grow: 1;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import '../../assets/scss/all';
+
+.sidebar {
+    .sidebarContent {
+        .rc-slider {
+            width: 90%;
+            margin: 15px 0 3px 5%;
+
+            .rc-slider-track {
+                background: $colorMain;
+            }
+            .rc-slider-handle, .rc-slider-handle:active {
+                width: 20px;
+                height: 20px;
+                margin-left: -10px;
+                margin-top: -8px;
+                border-width: 4px;
+                border-color: $colorMain;
+            }
+        }
+
+        .info {
+            font-size: 10px;
+            text-align: center;
+        }
+    }
+}

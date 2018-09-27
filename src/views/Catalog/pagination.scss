@@ -1,0 +1,25 @@
+@import '../../assets/scss/all';
+
+.catalog .ais-Pagination {
+    margin-top: 20px;
+
+    .ais-Pagination-item {
+        .ais-Pagination-link {
+            color: $colorMain;
+            border-color: $colorMain;
+
+            &:hover, &:focus {
+                color: #ffffff;
+                background-color: $colorMain;
+                border-color: $colorMain;
+                text-decoration: none;
+            }
+        }
+
+        .ais-Pagination-link--selected {
+            color: #ffffff;
+            background-color: $colorMain;
+            border-color: $colorMain;
+        }
+    }
+}
